@@ -1,0 +1,322 @@
+@charset "utf-8";
+
+@font-face{
+    font-family: 'Starswars';
+    src: url('../fontes/starjedi/Starjedi.ttf');
+}
+
+html, body{
+    height: 100%;
+    font-family: 'Starswars';
+    box-sizing: border-box;
+    font-size: 20px;   
+    
+}
+.container {
+    display: flex;
+}
+    
+
+.sidebar {
+    height: 100vh;
+    width: 240px;
+    background-color: #BEC7C7;
+
+    font-size: 18px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius:  0 10px 10px 0;
+    
+}
+
+.sidebar  li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 75px 0;
+    text-align: center;
+   
+
+}
+
+.sidebar li a{
+    text-decoration: none;
+    color: #06111C;
+}
+
+.conteudo-dash {
+    width: calc(100% - 240px);
+    height: 100vh;
+    background-color: white
+
+}
+
+
+ 
+.cards{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+   
+    
+}
+
+.card-a{
+    width: 239px;
+    height: 150px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    margin: 10px;
+    margin-right: 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+  
+
+
+}
+.card-a:hover {
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+
+.card-a{
+    display: flex;
+    justify-content: space-around;
+    width: 21%;
+    padding: 10px;
+    align-items: center;
+    
+    
+}
+
+.card-a img{
+    width: 60px;
+    margin-left: 5px;
+}
+
+.card-a p {
+    font-size: 54px;
+     margin-top: 10px;
+}
+
+.card-big{
+    width: 580px;
+    height: 150px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    margin: 10px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.card-big:hover {
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+
+}
+
+.card-big img{
+    width: 60px;
+    margin-left: 5px;
+}
+
+.card-big p{
+    font-size: 54px;
+    margin-top: 10px;
+
+}
+
+.cards{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   align-items: center;
+}
+
+.noticia-video {
+    display: flex;
+    justify-content: space-around;
+    height: 520px;
+    margin: 10px 10px;
+
+}
+
+.ultimasnoticias {
+    width: 50%;
+    height:100%;
+    background: #FFFFFF;
+}
+
+
+
+
+.ultimasnoticias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+ h2{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+.tabela-noticia {
+    margin-top: 30px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+    
+   
+}
+
+.tabela-noticia:hover {
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+
+}
+
+.tabela-noticia  th, td {
+    margin: 10px;
+    padding: 7px;
+    
+}
+    
+.video {
+    width: 50%;
+    height:100%;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+
+}
+.video p{
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 10px;
+    text-align: justify;
+}
+
+.video-star {
+    margin-top: 5px;
+    
+
+}
+
+.video-star iframe { 
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+    
+   
+    
+}
+
+.video-star iframe:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+
+
+}
+
+
+
+.footer{
+    height: 248px;
+    display: block;
+}
+
+
+.novidades img {
+    width:300px ;
+    height:150px ;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+    
+
+}
+
+.novidades img:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+
+
+}
+
+.novo-filme-do-star-wars iframe{
+    margin-left: 20px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+
+   
+}
+
+
+.novo-filme-do-star-wars iframe:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+
+}
+
+
+.serie-bobafett {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.titulo-novidades {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.serie-themandalorian {
+    text-align: justify;
+    
+
+}
+
+.serie-themandalorian img{
+    margin-left: 45px;
+    
+}
+
+.novidades{
+    display: flex;
+    height: 150px;
+    margin-left: 10px;
+    justify-content: space-around;
+}
+
+footer h3{
+    margin-bottom: 10px;
+}
+
+footer p{
+    text-align: justify;
+}
+
+.titulo-video{
+    text-align: center;
+}
